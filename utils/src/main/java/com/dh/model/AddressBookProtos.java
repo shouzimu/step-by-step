@@ -6,6 +6,7 @@ package com.dh.model;
 public final class AddressBookProtos {
   private AddressBookProtos() {}
   public static void registerAllExtensions(
+
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
 
