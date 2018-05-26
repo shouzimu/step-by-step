@@ -20,6 +20,7 @@ public class JdkServerHandler implements Runnable {
             ObjectInputStream ins = new ObjectInputStream(client.getInputStream());
             AddressBook book = (AddressBook) ins.readObject();
 
+            System.out.println(book);
             ObjectOutputStream output =
                 new ObjectOutputStream(client.getOutputStream());
             output.writeObject(book);
