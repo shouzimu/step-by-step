@@ -19,13 +19,6 @@ public class InserttionSort {
     public void testInserttionSort() {
         int[] a = {5, 7, 9, 11, 8, 2, 3, 9, 7, 16};
         inserttionSort(a);
-        print(a);
-    }
-
-    public void print(int [] a){
-        for (int i : a) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        Print.print(a);
     }
 }

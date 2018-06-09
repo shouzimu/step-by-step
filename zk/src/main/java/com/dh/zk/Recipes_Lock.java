@@ -1,18 +1,16 @@
 package com.dh.zk;
 
-import ch.qos.logback.classic.Level;
-import ch.qos.logback.classic.Logger;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.IntStream;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.slf4j.LoggerFactory;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.IntStream;
 
 public class Recipes_Lock {
 
@@ -24,8 +22,6 @@ public class Recipes_Lock {
 
     public static void main(String[] args) {
         client.start();
-        Logger logger = (Logger) LoggerFactory.getLogger("root");
-        logger.setLevel(Level.INFO);
 
         final InterProcessMutex lock = new InterProcessMutex(client, lock_path);
         final CountDownLatch down = new CountDownLatch(1);

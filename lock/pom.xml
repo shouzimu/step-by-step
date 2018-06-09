@@ -10,10 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lock</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>../zk</module>
-    </modules>
 
     <dependencies>
         <dependency>
@@ -24,7 +20,11 @@
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <version>3.4.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
         </dependency>
 
     </dependencies>
