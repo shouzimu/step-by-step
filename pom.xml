@@ -26,6 +26,7 @@
         <module>lock</module>
         <module>javabasic</module>
         <module>netty</module>
+        <module>webflux</module>
     </modules>
 
 
