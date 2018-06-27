@@ -1,4 +1,4 @@
-package com.dh.jb.al;
+package com.dh.basic.al;
 
 public class Print {
     public static void print(int[] a) {

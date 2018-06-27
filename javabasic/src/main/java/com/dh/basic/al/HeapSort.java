@@ -1,4 +1,4 @@
-package com.dh.jb.al;
+package com.dh.basic.al;
 
 import org.junit.Test;
 
