@@ -5,12 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dh</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>project</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>serialize</module>
+        <module>grpc</module>
+        <module>payment</module>
+        <module>webflux</module>
     </modules>
 
     <repositories>
