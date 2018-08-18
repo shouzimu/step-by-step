@@ -3,4 +3,7 @@
 - [两个线程交替打印奇偶数](concurrent/basic/src/main/java/com/dh/concurrent/lock/AlternatePrint.java)
 
 ### 算法
-- [堆排序](sort/src/main/java/com/dh/basic/al/HeapSort.java)
+- [快速排序](algorithm/doc/01.QuickSort.md)
+- [归并排序](algorithm/doc/02.MergeSort.md)
+- [插入排序](algorithm/doc/03.InserttionSort.md)
+- [堆排序](algorithm/doc/04.HeapSort.md)
