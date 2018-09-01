@@ -1,4 +1,4 @@
-package com.dh.mq.consumer;
+rocketmqpackage com.dh.mq.consumer;
 
 import com.aliyun.openservices.ons.api.Consumer;
 import com.aliyun.openservices.ons.api.ONSFactory;

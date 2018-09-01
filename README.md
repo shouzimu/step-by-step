@@ -1,6 +1,6 @@
 # java-step-by-step
 ### Java 多线程
-- [两个线程交替打印奇偶数](concurrent/basic/src/main/java/com/dh/concurrent/lock/AlternatePrint.java)
+- [两个线程交替打印奇偶数](concurrent/src/main/java/com/dh/concurrent/lock/AlternatePrint.java)
 
 ### 算法
 - [快速排序](algorithm/doc/01.QuickSort.md)
