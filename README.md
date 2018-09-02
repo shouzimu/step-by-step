@@ -9,5 +9,5 @@
 - [堆排序](algorithm/doc/04.HeapSort.md)
 
 
-###设计模式
+### 设计模式
 - [观察者模式](gof/doc/01.ObserverPattern.md)
