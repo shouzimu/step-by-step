@@ -20,6 +20,7 @@
         <module>grpc</module>
         <module>payment</module>
         <module>webflux</module>
+        <module>graphql</module>
     </modules>
 
 </project>
