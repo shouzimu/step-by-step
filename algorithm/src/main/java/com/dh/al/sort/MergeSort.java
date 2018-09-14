@@ -1,4 +1,4 @@
-package com.dh.al;
+package com.dh.al.sort;
 
 import org.junit.Test;
 

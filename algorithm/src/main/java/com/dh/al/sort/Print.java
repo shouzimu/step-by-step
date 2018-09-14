@@ -1,4 +1,4 @@
-package com.dh.al;
+package com.dh.al.sort;
 
 public class Print {
     public static void print(int[] a) {

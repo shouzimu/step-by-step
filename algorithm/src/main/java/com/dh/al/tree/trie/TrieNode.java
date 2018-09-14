@@ -1,4 +1,4 @@
-package com.dh.al.trie;
+package com.dh.al.tree.trie;
 
 import lombok.Data;
 
