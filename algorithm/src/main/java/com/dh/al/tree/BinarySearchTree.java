@@ -6,11 +6,17 @@ import java.util.stream.IntStream;
 
 public class BinarySearchTree {
 
-    TreeNode<Integer> root;
+    TreeNode root;
 
-    public void insertBST(BinarySearchTree tree, TreeNode<Integer> z) {
-        TreeNode<Integer> x = tree.root;
-        TreeNode<Integer> y = null;
+    /**
+     * 生成/插入树
+     *
+     * @param tree
+     * @param z
+     */
+    public void insertBST(BinarySearchTree tree, TreeNode z) {
+        TreeNode x = tree.root;
+        TreeNode y = null;
         while (x != null) {
             y = x;
             if (z.value < x.value) {
@@ -29,6 +35,25 @@ public class BinarySearchTree {
         }
     }
 
+    TreeNode treeSearch(TreeNode x, int k) {
+        if (x == null || k == x.value) {
+            return x;
+        }
+        if (k < x.value) {
+            return treeSearch(x.left, k);
+        } else {
+            return treeSearch(x.right, k);
+        }
+    }
+
+    void inorderTreeWalk(TreeNode x) {
+        if (x != null) {
+            inorderTreeWalk(x.left);
+            System.out.println(x);
+            inorderTreeWalk(x.right);
+        }
+    }
+
     @Test
     public void testInsertBst() {
         BinarySearchTree tree = new BinarySearchTree();
@@ -39,6 +64,10 @@ public class BinarySearchTree {
             insertBST(tree, t);
         });
 
-        System.out.println(true);
+        System.out.println("---treeSearch---");
+        TreeNode search = treeSearch(tree.root, 5);
+        System.out.println(search);
+        System.out.println("---inorderTreeWalk---");
+        inorderTreeWalk(search);
     }
 }
