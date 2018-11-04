@@ -19,6 +19,7 @@
         <module>io</module>
         <module>mq</module>
         <module>project</module>
+        <module>es</module>
     </modules>
 
     <repositories>
