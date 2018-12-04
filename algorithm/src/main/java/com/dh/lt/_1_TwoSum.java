@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum {
+public class _1_TwoSum {
     public int[] twoSum(int[] nums, int target) {
         if (nums.length < 2) {
             return new int[]{};
@@ -20,18 +20,6 @@ public class TwoSum {
         return new int[]{};
     }
 
-    public int[] twoSumV2(int[] nums, int target) {
-        if (nums.length < 2) {
-            return new int[]{};
-        }
-        Map<Integer,Integer> map = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-
-        }
-        return new int[]{};
-
-    }
 
     @Test
     public void testTwoSum() {
