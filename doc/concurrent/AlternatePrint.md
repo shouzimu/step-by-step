@@ -4,6 +4,4 @@
 <p>
 这个地方使用Condition来实现
 
-```java
-
-```
+[代码](/concurrent/src/main/java/com/dh/concurrent/lock/AlternatePrint.java)
