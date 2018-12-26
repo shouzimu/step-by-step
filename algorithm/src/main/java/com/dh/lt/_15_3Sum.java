@@ -4,6 +4,17 @@ import org.junit.Test;
 
 import java.util.*;
 
+/**
+ * https://leetcode.com/problems/3sum/
+ * <p>
+ * Given array nums = [-1, 0, 1, 2, -1, -4],
+ * <p>
+ * A solution set is:
+ * [
+ * [-1, 0, 1],
+ * [-1, -1, 2]
+ * ]
+ */
 public class _15_3Sum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
@@ -50,12 +61,56 @@ public class _15_3Sum {
         return res;
     }
 
+    /*
+
+    解题思路
+
+     */
+
+    public List<List<Integer>> threeSumV2(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            int left = i + 1;
+            int right = nums.length - 1;
+            while (left < right) {
+                if (nums[i] + nums[left] + nums[right] > 0) {
+                    right = right - 1;
+                } else if (nums[i] + nums[left] + nums[right] < 0) {
+                    left = left + 1;
+                } else {
+                    List<Integer> values = Arrays.asList(nums[i], nums[left], nums[right]);
+                    res.add(values);
+                    while (left < right && nums[left] == nums[left + 1]) {
+                        left++;
+                    }
+                    while (left < right && nums[right] == nums[right - 1]) {
+                        right--;
+                    }
+                    left++;
+                    right--;
+
+                }
+            }
+        }
+        return res;
+    }
 
     @Test
     public void testThreeSum() {
-        int[] nums = {-2,0,0,2,2};
+        int[] nums = {-2, 0, 0, 2, 2};
         List<List<Integer>> res = threeSum(nums);
+
         for (List<Integer> re : res) {
+            re.forEach(r -> System.out.print(r + " "));
+            System.out.println();
+        }
+
+        List<List<Integer>> res2 = threeSumV2(nums);
+        for (List<Integer> re : res2) {
             re.forEach(r -> System.out.print(r + " "));
             System.out.println();
         }
