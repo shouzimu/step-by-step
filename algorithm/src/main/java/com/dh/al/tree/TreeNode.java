@@ -3,7 +3,7 @@ package com.dh.al.tree;
 import lombok.Data;
 
 @Data
-public class TreeNode {
+class TreeNode {
     int value;
 
     TreeNode left;
