@@ -1,4 +1,4 @@
-package com.dh.lt;
+package com.dh.lt.two;
 
 import org.junit.Test;
 

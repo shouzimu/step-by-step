@@ -1,4 +1,4 @@
-package com.dh.lt;
+package com.dh.lt.seven;
 
 /**
  * https://leetcode.com/problems/kth-largest-element-in-a-stream/

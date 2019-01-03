@@ -1,4 +1,4 @@
-package com.dh.lt;
+package com.dh.lt.two;
 
 import com.dh.lt.common.ListNode;
 import org.junit.Test;
