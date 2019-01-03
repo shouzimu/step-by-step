@@ -1,5 +1,6 @@
 package com.dh.lt;
 
+import com.dh.lt.common.ListNode;
 import org.junit.Test;
 
 /**
@@ -10,19 +11,6 @@ import org.junit.Test;
  * 这个题是末位补零，前面对齐，很坑
  */
 public class _2_AddTwoNumbers {
-
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        public void setNext(ListNode next) {
-            this.next = next;
-        }
-    }
 
     //前面补0的算法
     public ListNode addTwoNumbersV2(ListNode nl1, ListNode nl2) {
@@ -132,20 +120,9 @@ public class _2_AddTwoNumbers {
 
     @Test
     public void testAddTwoNumbers() {
-        ListNode l1 = new ListNode(2);
-        ListNode l12 = new ListNode(4);
-        ListNode l13 = new ListNode(3);
-        l12.setNext(l13);
-        l1.setNext(l12);
+        ListNode l1 = ListNode.initNode(new int[]{2,3,4});
 
-
-        ListNode l2 = new ListNode(5);
-        ListNode l22 = new ListNode(6);
-        ListNode l23 = new ListNode(4);
-        ListNode l24 = new ListNode(0);
-        l23.setNext(l24);
-        l22.setNext(l23);
-        l2.setNext(l22);
+        ListNode l2 = ListNode.initNode(new int[]{6,8});
 
         ListNode res1 = addTwoNumbers(l1, l2);
         ListNode res2 = addTwoNumbersV2(l1, l2);

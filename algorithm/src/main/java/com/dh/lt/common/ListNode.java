@@ -11,6 +11,9 @@ public class ListNode {
         val = x;
     }
 
+    public void setNext(ListNode next) {
+        this.next = next;
+    }
 
     public static ListNode initNode(int[] values) {
         ListNode head = new ListNode(values[0]);

@@ -1,5 +1,6 @@
 package com.dh.lt;
 
+import com.dh.lt.common.ListNode;
 import org.junit.Test;
 
 /**
@@ -7,26 +8,6 @@ import org.junit.Test;
  * 反转链表
  */
 public class _206_ReverseLinkedList {
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        public void setNext(ListNode next) {
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    '}';
-        }
-    }
-
 
     public ListNode reverseList(ListNode head) {
         ListNode newHead = null;
@@ -46,9 +27,9 @@ public class _206_ReverseLinkedList {
         ListNode l22 = new ListNode(2);
         ListNode l23 = new ListNode(3);
         ListNode l24 = new ListNode(4);
-        l23.setNext(l24);
-        l22.setNext(l23);
-        l2.setNext(l22);
+        l23.next = l24;
+        l22.next = l23;
+        l2.next = l22;
 
         ListNode res = reverseList(l2);
         print(res);
