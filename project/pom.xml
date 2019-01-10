@@ -29,6 +29,7 @@
         <module>payment</module>
         <module>webflux</module>
         <module>graphql</module>
+        <module>dubbo-demo</module>
     </modules>
 
 </project>
