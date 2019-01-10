@@ -1,8 +1,5 @@
 package com.dh.lt.common;
 
-import lombok.Data;
-
-@Data
 public class ListNode {
     public int val;
     public ListNode next;
@@ -11,15 +8,11 @@ public class ListNode {
         val = x;
     }
 
-    public void setNext(ListNode next) {
-        this.next = next;
-    }
-
     public static ListNode initNode(int[] values) {
         ListNode head = new ListNode(values[0]);
         ListNode pre = head;
         for (int i = 1; i < values.length; i++) {
-            if(null != pre.next){
+            if (null != pre.next) {
                 pre = pre.next;
             }
             ListNode node = new ListNode(values[i]);
