@@ -112,4 +112,13 @@ public class _102_BinaryTreeLevelOrderTraversal {
         TreeNode root = TreeNodeIterator.initTestTree();
         levelOrder(root);
     }
+
+    public void print(List<List<Integer>> list){
+        for (List<Integer> is : list) {
+            for (Integer i : is) {
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        }
+    }
 }

@@ -59,7 +59,7 @@ public class TreeNodeIterator {
      *
      * @param root
      */
-    void bfsIterator(TreeNode root) {
+    public void bfsIterator(TreeNode root) {
         Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         while (!queue.isEmpty()) {
