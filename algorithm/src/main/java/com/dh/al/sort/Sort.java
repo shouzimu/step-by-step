@@ -23,9 +23,9 @@ public class Sort {
         if (l >= r) {
             return;
         }
-        int provit = partition(a, l, r);
-        quickSort(a, l, provit - 1);
-        quickSort(a, provit + 1, r);
+        int part = partition(a, l, r);
+        quickSort(a, l, part - 1);
+        quickSort(a, part + 1, r);
     }
 
     public int partition(int[] a, int l, int r) {
@@ -94,6 +94,7 @@ public class Sort {
         System.arraycopy(r, 0, a, 0, n);
     }
 
+
     @Test
     public void testSort() {
         int[] a = new int[]{5, 4, 3, 2, 1, 9};
@@ -101,9 +102,7 @@ public class Sort {
         Print.print(a);
         a = new int[]{5, 4, 3, 2, 1, 9};
         quickSort(a, 0, 5);
+        Print.print(a);
 
-        int[] b = new int[]{2, 5, 3, 0, 2, 3, 0, 3};
-        bucketSort(b);
-        Print.print(b);
     }
 }
