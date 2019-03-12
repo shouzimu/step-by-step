@@ -28,19 +28,23 @@ public class Sort {
         quickSort(a, part + 1, r);
     }
 
-    public int partition(int[] a, int l, int r) {
+    public int partition(int[
+            ] a, int l, int r) {
         int v = a[r];
         for (int j = l; j < r; j++) {
             if (a[j] < v) {
-                int t = a[j];
-                a[j] = a[l];
-                a[l] = t;
+                swap(a, l, j);
                 l++;
             }
         }
-        a[r] = a[l];
-        a[l] = v;
+        swap(a, l, r);
         return l;
+    }
+
+    private void swap(int[] a, int i, int j) {
+        int t = a[j];
+        a[j] = a[i];
+        a[i] = t;
     }
 
 
