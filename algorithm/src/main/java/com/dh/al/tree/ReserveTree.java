@@ -1,12 +1,5 @@
 package com.dh.al.tree;
 
-import com.dh.lt.common.TreeNode;
-import com.dh.lt.common.TreeNodeIterator;
-import com.dh.lt.one._102_BinaryTreeLevelOrderTraversal;
-import org.junit.Test;
-
-import java.util.List;
-
 /**
  * ClassName: ReserveTree
  *
@@ -28,17 +21,6 @@ public class ReserveTree {
         reserve(right);
     }
 
-    @Test
-    public void testReserve() {
-        TreeNode root = TreeNodeIterator.initTestTree();
-        _102_BinaryTreeLevelOrderTraversal order = new _102_BinaryTreeLevelOrderTraversal();
-        List<List<Integer>> l1 = order.levelOrderV1(root);
-        order.print(l1);
-        System.out.println();
-        reserve(root);
-        l1 = order.levelOrderV1(root);
-        order.print(l1);
-    }
 
 
 

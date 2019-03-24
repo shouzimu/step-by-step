@@ -1,0 +1,10 @@
+test:
+    name: lihong
+    sex: M
+    age: 28
+
+#spring:
+#    data:
+#        elasticsearch:
+#            cluster-name: my-application-1
+#            cluster-nodes: 139.199.119.103:9300

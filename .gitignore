@@ -8,3 +8,4 @@ target
 *.iml
 *target
 project/spring-test/target
+doc/arch/架构.md

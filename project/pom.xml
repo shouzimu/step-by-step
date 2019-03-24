@@ -27,7 +27,6 @@
     <modules>
         <module>grpc</module>
         <module>payment</module>
-        <module>spring-test</module>
         <module>graphql</module>
         <module>dubbo-demo</module>
     </modules>
