@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dh.repository.order.OrderRepository">
+
+  <insert id="insert" useGeneratedKeys="true" keyProperty="orderId">
+        INSERT INTO t_order (
+         order_id, user_id, status
+        )
+        VALUES (
+        #{orderId},
+        #{userId},
+        #{status}
+        )
+   </insert>
+
+  <select id="getByOrderId" resultType="com.dh.entity.order.Order">
+      SELECT
+        order_id orderId,
+        user_id  userId,
+        status
+      FROM t_order where order_id = #{orderId}
+  </select>
+
+
+  <select id="listByIds" resultType="com.dh.entity.order.Order">
+      SELECT
+        order_id orderId,
+        user_id  userId,
+        status
+      FROM t_order
+      where 1=1
+       <if test="null != ids and ids.size()>0">
+          and order_id in
+         <foreach collection="ids" item="orderId" index="index" open="(" separator="," close=")">
+           #{orderId}
+         </foreach>
+       </if>
+      limit 100
+  </select>
+
+</mapper>

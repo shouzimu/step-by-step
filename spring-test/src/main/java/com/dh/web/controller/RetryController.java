@@ -17,8 +17,6 @@ public class RetryController {
     @GetMapping("/test")
     public Object test() {
         PayObject p = new PayObject();
-        p.setAmount(111);
-        p.setId("111");
         try {
             return payService.pay(p);
         } catch (Exception e) {

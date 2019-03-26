@@ -10,7 +10,11 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>sprint-test</artifactId>
+  <artifactId>spring-test</artifactId>
+
+  <properties>
+    <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -88,6 +92,82 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.14</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid-spring-boot-starter</artifactId>
+      <version>1.1.14</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql-connector-java.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
+
+
+    <dependency>
+      <groupId>io.shardingjdbc</groupId>
+      <artifactId>sharding-jdbc-core</artifactId>
+      <version>2.0.3</version>
+    </dependency>
+
+    <!--<dependency>-->
+      <!--<groupId>io.shardingsphere</groupId>-->
+      <!--<artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+      <!--<version>3.0.0.M3</version>-->
+    <!--</dependency>-->
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.apache.zookeeper</groupId>
+      <artifactId>zookeeper</artifactId>
+      <version>3.4.10</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.curator</groupId>
+      <artifactId>curator-framework</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.curator</groupId>
+      <artifactId>curator-recipes</artifactId>
+      <version>4.0.1</version>
     </dependency>
 
   </dependencies>
