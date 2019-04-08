@@ -43,6 +43,7 @@ public class Consumer {
         DefaultMQPushConsumer defaultMQPushConsumer = new DefaultMQPushConsumer(consumerGroup);
         defaultMQPushConsumer.setNamesrvAddr(namesrvAddr);
         defaultMQPushConsumer.setInstanceName(String.valueOf(System.currentTimeMillis()));
+        defaultMQPushConsumer.setVipChannelEnabled(false);
 
         // 订阅指定MyTopic下tags等于MyTag
 

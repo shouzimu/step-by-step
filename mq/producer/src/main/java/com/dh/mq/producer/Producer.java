@@ -1,5 +1,6 @@
 package com.dh.mq.producer;
 
+import java.lang.invoke.MethodHandles;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.slf4j.Logger;
@@ -7,8 +8,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.lang.invoke.MethodHandles;
 
 
 @Configuration
@@ -34,6 +33,7 @@ public class Producer {
         DefaultMQProducer defaultMQProducer = new DefaultMQProducer(producerGroup);
         defaultMQProducer.setNamesrvAddr(namesrvAddr);
         defaultMQProducer.setInstanceName(String.valueOf(System.currentTimeMillis()));
+        defaultMQProducer.setVipChannelEnabled(false);
 
         defaultMQProducer.start();
 
