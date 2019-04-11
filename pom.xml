@@ -21,7 +21,6 @@
     </parent>
 
     <modules>
-        <module>algorithm</module>
         <module>concurrent</module>
         <module>demo</module>
         <module>distributed</module>
