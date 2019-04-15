@@ -5,10 +5,11 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
+import org.apache.zookeeper.data.Stat;
 
 public class ZkSeq {
 
-    static String zookeeperConnectionString = "shouzimu.com:2181";
+    static String zookeeperConnectionString = "127.0.0.1:2181";
 
     static String seq_path = "/seq_path";
     static RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
@@ -26,6 +27,46 @@ public class ZkSeq {
             e.printStackTrace();
         }
         return null;
+    }
+
+
+    public static String createPersistentSequential(String path) {
+        try {
+            String t = client.create().withMode(CreateMode.PERSISTENT_SEQUENTIAL).forPath(path);
+            return t;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
+    public static String createPersistent(String path) {
+        try {
+            String t = client.create().withMode(CreateMode.PERSISTENT).forPath(path);
+            return t;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static void deletePath(String path) {
+        try {
+            client.delete().forPath(path);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void getPath(String path) {
+        try {
+            Stat stat = new Stat();
+            client.getData().storingStatIn(stat).forPath(path);
+            System.out.println(stat);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

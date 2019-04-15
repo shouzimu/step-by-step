@@ -9,10 +9,10 @@ import org.springframework.retry.annotation.EnableRetry;
 @EnableRetry
 @MapperScan("com.dh.repository")
 @SpringBootApplication
-public class WebApplication {
+public class SpringTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebApplication.class);
+        SpringApplication.run(SpringTestApplication.class);
     }
 }
 
