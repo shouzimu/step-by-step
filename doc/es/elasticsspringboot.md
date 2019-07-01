@@ -1,4 +1,4 @@
-####ElasticsSearch5.2.2和SpringBoot2.x整合遇到的坑
+#### ElasticsSearch5.2.2和SpringBoot2.x整合遇到的坑
 项目一开始是elasticsSearch5.2.2+springboot1.5.8,稳定运行了半年
 最近准备升级到springboot2.1
 

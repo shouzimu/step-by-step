@@ -3,7 +3,7 @@ package com.dh.juc;
 import java.util.concurrent.LinkedBlockingQueue;
 import org.junit.Test;
 
-public class LinkedBlockingQueueTest {
+public class  LinkedBlockingQueueTest {
 
     @Test
     public void testPut() throws InterruptedException {
