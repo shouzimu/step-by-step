@@ -11,3 +11,6 @@
 - [centos7安装和配置Shadowsocks](doc/basic/centos7安装和配置Shadowsocks%20server.md)
 - [elastics5.2.2+springboo2整合遇到的坑](doc/basic/elasticsspringboot.md)
 
+
+## 整合
+- [es+canal+logstash优化用户查询](doc/es/06essync.md)
