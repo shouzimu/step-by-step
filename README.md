@@ -1,6 +1,7 @@
 # step-by-step
 
-##环境搭建
+## 环境搭建
+
 - [springboot+mybatis+sharding分表](doc/arch/02.分表.md)
 - [redis主从集群搭建](doc/basic/redis集群搭建.md)
 - [mysql事务等级](doc/basic/数据库事务.md)
