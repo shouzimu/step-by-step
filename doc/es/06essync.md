@@ -312,6 +312,11 @@ output {
 }
 ```
 
+启动logstatsh同步
+```shell
+bin/logstash -f sync.conf
+```
+
 #### 四、查询代码
 
 从es中查询数据
