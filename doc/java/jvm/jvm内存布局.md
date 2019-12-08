@@ -2,7 +2,7 @@
 
 
 
-![jvm-w70](../../storage/img/2019/jvm_m.png)
+![jvm-w70](../../../storage/img/2019/jvm_m.png)
 (图)经典的JVM内存布局
 
 
