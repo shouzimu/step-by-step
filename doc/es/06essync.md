@@ -36,6 +36,10 @@ PUT /member_info
 
 2、设置type member
 PUT /member_info/_mapping/member
+{
+	"properties": {
+	}
+}
 
 es工作到此结束
 ```
