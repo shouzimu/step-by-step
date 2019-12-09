@@ -14,3 +14,7 @@
 
 ## 整合
 - [es+canal+logstash优化用户查询](doc/es/06essync.md)
+
+
+## 资料
+- [JSR-133 内存模型与线程规范中文版](doc/java/JSR133中文版.pdf)
