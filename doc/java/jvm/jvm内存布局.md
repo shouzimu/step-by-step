@@ -2,7 +2,7 @@
 
 
 
-![jvm-w70](../../../storage/img/2019/jvm_m.png)
+![jvm-w70](https://modprobe.oss-cn-beijing.aliyuncs.com/github/sts/jvm_m.png)
 (图)经典的JVM内存布局
 
 
@@ -36,7 +36,7 @@ S0和S1同时只有一块正在使用，YGC的时候将对象复制到未使用�
 
 
 
-![jvm](../../storage/img/2019/new_object.png)
+![jvm](https://modprobe.oss-cn-beijing.aliyuncs.com/github/sts/new_object.png)
 
 (图)对象分配与简要GC流程图
 

@@ -53,7 +53,7 @@
 
 * 搜索的response
 
-![image-20190714102340427](../../storage/img/es-response.png)
+![image-20190714102340427](https://modprobe.oss-cn-beijing.aliyuncs.com/github/sts//es-response.png)
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-![image-20190714103114009](../../storage/img/es-positive.png)
+![image-20190714103114009](https://modprobe.oss-cn-beijing.aliyuncs.com/github/sts//es-positive.png)
 
 ```
 三角形：不相关的内容
