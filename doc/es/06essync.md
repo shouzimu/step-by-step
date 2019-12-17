@@ -290,9 +290,22 @@ input {
     stdin {
     }
     jdbc {
-
-
-mysql 数据库链接,database为数据库名
+      # mysql 数据库链接
+      jdbc_connection_string => "jdbc:mysql://数据库连接"
+      # 用户名和密码
+      jdbc_user => "数据库用户名"
+      jdbc_password => "数据库密码"
+      # 驱动
+      jdbc_driver_library => "/usr/local/logstash/mysqldoc/mysql-connector-java-8.0.8-dmr.jar"
+      # 驱动类名
+      jdbc_driver_class => "com.mysql.jdbc.Driver"
+      jdbc_paging_enabled => "true"
+      jdbc_page_size => "50000"
+      # 执行的sql
+      statement => "SELECT m.id as id,m.pinyin_code as py,m.name,m.mobile FROM 用户表 m WHERE length(m.name) > 1 and is_deleted=0   ORDER BY m.create_time DESC"
+      type => "es创建的type"
+ }
+}
 
 filter {
     json {
@@ -303,11 +316,10 @@ filter {
 
 output {
     elasticsearch {
-        hosts => ["es地址:es端口"]
-        index => "member_info"
-        user  => "es用户名"
-        password => "es密码"
-        # 文档id映射，为了更新或者删除方便
+        hosts => ["es服务器"]
+        index => "创建的所以"
+        user  => "xpack用户名"
+        password => "xpack密码"
         document_id => "%{id}"
     }
     stdout {
