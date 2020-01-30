@@ -18,3 +18,4 @@
 
 ## 资料
 - [JSR-133 内存模型与线程规范中文版](https://modprobe.oss-cn-beijing.aliyuncs.com/github/sts/JSR-133%E4%B8%AD%E6%96%87%E7%89%88.pdf)
+- [百度大佬翻译的Raft一致性算法论文](doc/distributed/raft-zh_cn.md)
