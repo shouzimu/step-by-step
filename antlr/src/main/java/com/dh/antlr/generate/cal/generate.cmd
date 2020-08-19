@@ -1,0 +1,1 @@
+java -jar /c/lib/antlr/antlr-4.8-complete.jar Calculator.g4  -visitor -package com.dh.antlr.generate.cal
