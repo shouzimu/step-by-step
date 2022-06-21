@@ -16,7 +16,7 @@
 
 
     <properties>
-        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.28</mysql-connector-java.version>
         <elasticsearch.version>5.2.2</elasticsearch.version>
     </properties>
 
